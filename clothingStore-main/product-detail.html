@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi tiết sản phẩm - Shop Thời Trang ABC</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/product-detail.css" />
+    <link rel="stylesheet" href="css/products.css" />
+    <link rel="stylesheet" href="css/icons.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+              <li>
+                <a href="products.html" class="nav-link active">Sản phẩm</a>
+              </li>
+              <li><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+              <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="login.html" aria-label="Tài khoản">
+              <img src="./img/icon-user.png" alt="Tài khoản" class="icon-img" />
+            </a>
+            <a href="cart.html" aria-label="Giỏ hàng">
+              <img src="./img/icon-cart.png" alt="Giỏ hàng" class="icon-img" />
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+              <img src="./img/icon-menu.png" alt="Menu" class="icon-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container py-5">
+        <div class="layout-two-col product-main-layout">
+          <div class="product-gallery-section">
+            <div class="product-gallery">
+              <div class="main-image-container">
+                <img
+                  src="./img/sanpham-1.png"
+                  alt="Áo thun đen"
+                  id="main-image"
+                  class="product-main-image"
+                />
+              </div>
+              <div class="thumbnail-container">
+                <img
+                  src="./img/chitietsanpham-1.jpg"
+                  alt="Thumbnail 1"
+                  class="thumbnail-image active"
+                />
+                <img
+                  src="./img/chituetsanpham2.jpg"
+                  alt="Thumbnail 2"
+                  class="thumbnail-image"
+                />
+                <img
+                  src="./img/chitietsanpham3.jpg"
+                  alt="Thumbnail 3"
+                  class="thumbnail-image"
+                />
+                <img
+                  src="./img/chitietsanpham4.jpg"
+                  alt="Thumbnail 4"
+                  class="thumbnail-image"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="product-info-section">
+            <div class="product-info-details">
+              <h1 class="product-title">Áo Thun Đen In Hình</h1>
+              <p class="product-price-detail">320.000đ</p>
+              <p class="product-description">
+                Áo thun cotton 100% thoáng mát, co giãn 4 chiều. Thiết kế basic
+                với hình in sắc nét, phù hợp cho cả nam và nữ, dễ dàng phối với
+                nhiều loại trang phục.
+              </p>
+
+              <div class="product-options">
+                <div class="option-group">
+                  <label class="option-label">Kích cỡ:</label>
+                  <div class="size-selector">
+                    <button class="size-btn">S</button>
+                    <button class="size-btn active">M</button>
+                    <button class="size-btn">L</button>
+                    <button class="size-btn">XL</button>
+                  </div>
+                </div>
+
+                <div class="option-group">
+                  <label for="quantity" class="option-label">Số lượng:</label>
+                  <input
+                    type="number"
+                    id="quantity"
+                    value="1"
+                    min="1"
+                    class="quantity-input"
+                  />
+                </div>
+              </div>
+
+              <a href="cart.html" class="btn btn-add-to-cart">
+                <img
+                  src="icons/shopping-bag.png"
+                  alt=""
+                  class="icon-img me-2"
+                />Thêm vào giỏ
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-tabs-section">
+          <div class="product-tabs">
+            <div class="tab-header">
+              <button class="tab-link active" data-tab="description">
+                Mô tả chi tiết
+              </button>
+              <button class="tab-link" data-tab="reviews">Đánh giá (3)</button>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active" id="description">
+                <p>
+                  Đây là phần mô tả chi tiết về sản phẩm. Chất liệu cotton cao
+                  cấp, thấm hút mồ hôi tốt. Đường may tỉ mỉ, chắc chắn. Hình in
+                  sử dụng công nghệ tiên tiến, không bong tróc sau nhiều lần
+                  giặt. Hướng dẫn bảo quản: Giặt ở nhiệt độ thường, không dùng
+                  chất tẩy, phơi ở nơi thoáng mát.
+                </p>
+              </div>
+              <div class="tab-pane" id="reviews">
+                <p>Hiện chưa có đánh giá nào cho sản phẩm này.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="related-products-section">
+          <h2 class="section-title">Sản phẩm liên quan</h2>
+          <div class="grid grid-4">
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="./img/sanphamlienquan-1.jpg"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Thun Cam</h3>
+                  <p class="product-price">290.000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="./img/sanphamlienquan-2.png"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Sơ Mi Trắng</h3>
+                  <p class="product-price">450.000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="./img/sanphamlienquan-3.png"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Áo Hoodie Nỉ Xám</h3>
+                  <p class="product-price">590.000đ</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid-item">
+              <div class="product-card">
+                <a href="#"
+                  ><img
+                    src="./img/sanphamlienquan-4.jpg"
+                    alt="Sản phẩm liên quan"
+                    class="product-image"
+                /></a>
+                <div class="product-info">
+                  <h3 class="product-name">Quần Jean Xanh</h3>
+                  <p class="product-price">680.000đ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-4 footer-grid">
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Về ABC Shop</h4>
+              <p>
+                Cửa hàng thời trang ABC mang đến những sản phẩm chất lượng cao
+                với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
+              </p>
+              <div class="social-icons">
+                <a href="#"
+                  ><img
+                    src="./img/facebook-app-symbol.png"
+                    alt="Facebook"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./img/instagram.png"
+                    alt="Instagram"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="./img/youtube.png" alt="YouTube" class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="./img/tik-tok.png" alt="TikTok" class="icon-img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Hỗ trợ</h4>
+              <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên kết</h4>
+              <ul>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên hệ</h4>
+              <ul>
+                <ul>
+                  <li><p>19 Lê Thánh Tông, Hoàn Kiếm, Hà Nội</p></li>
+                  <li><p>(024) 39 876 543</p></li>
+                  <li><p>support@abcshop.com</p></li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ABC Shop. Thiết kế và phát triển bởi bạn.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/product-detail.js"></script>
+  </body>
+</html>

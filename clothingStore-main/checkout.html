@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <title>Thanh toán - Shop ABC</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/forms.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
+
+    <link rel="stylesheet" href="css/icons.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <h1 class="logo"><a href="index.html">ABC Shop</a></h1>
+          <nav class="navigation">
+            <ul class="nav-list">
+              <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+              <li><a href="products.html" class="nav-link">Sản phẩm</a></li>
+              <li><a href="about.html" class="nav-link">Về chúng tôi</a></li>
+              <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+              <li><a href="blog.html" class="nav-link">Blog</a></li>
+            </ul>
+          </nav>
+          <div class="header-actions">
+            <a href="login.html" aria-label="Tài khoản">
+              <img src="./img/icon-user.png" alt="Tài khoản" class="icon-img" />
+            </a>
+            <a href="cart.html" aria-label="Giỏ hàng" class="active">
+              <img src="./img/icon-cart.png" alt="Giỏ hàng" class="icon-img" />
+            </a>
+            <div class="menu-toggle" id="menu-toggle">
+              <img src="./img/icon-menu.png" alt="Menu" class="icon-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="page-header"><h1>Thanh toán</h1></div>
+      <div class="container py-5">
+        <div class="layout-60-40">
+          <div class="checkout-section">
+            <div class="checkout-form">
+              <h2 class="form-section-title">Thông tin thanh toán</h2>
+              <form>
+                <div class="form-row">
+                  <div class="form-col">
+                    <div class="form-group">
+                      <label for="firstname">Họ</label>
+                      <input type="text" id="firstname" required />
+                    </div>
+                  </div>
+                  <div class="form-col">
+                    <div class="form-group">
+                      <label for="lastname">Tên</label>
+                      <input type="text" id="lastname" required />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="address">Địa chỉ</label>
+                  <input type="text" id="address" required />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Số điện thoại</label>
+                  <input type="tel" id="phone" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" required />
+                </div>
+                <div class="form-group">
+                  <label for="notes">Ghi chú đơn hàng (tùy chọn)</label>
+                  <textarea
+                    id="notes"
+                    rows="4"
+                    placeholder="Ghi chú về đơn hàng, ví dụ: thời gian hay chỉ dẫn địa điểm giao hàng chi tiết."
+                  ></textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="summary-section">
+            <div class="order-summary">
+              <h2 class="form-section-title">Đơn hàng của bạn</h2>
+              <div class="order-items">
+                <div class="order-item">
+                  <span class="item-name"
+                    >Áo Thun Đen In Hình x <strong>1</strong></span
+                  >
+                  <span class="item-price">320.000đ</span>
+                </div>
+                <div class="order-item">
+                  <span class="item-name"
+                    >Quần Jean Xanh Rách Gối x <strong>1</strong></span
+                  >
+                  <span class="item-price">680.000đ</span>
+                </div>
+              </div>
+              <div class="summary-line">
+                <span>Tạm tính</span>
+                <span>1.000.000đ</span>
+              </div>
+              <div class="summary-line">
+                <span>Phí giao hàng</span>
+                <span>Miễn phí</span>
+              </div>
+              <div class="summary-line total">
+                <span>Tổng cộng</span>
+                <span>1.000.000đ</span>
+              </div>
+
+              <div class="payment-methods">
+                <h3 class="payment-title">Phương thức thanh toán</h3>
+                <div class="payment-option">
+                  <input
+                    type="radio"
+                    id="cod"
+                    name="payment"
+                    value="cod"
+                    checked
+                  />
+                  <label for="cod">
+                    <img
+                      src="./img/money.png"
+                      alt="COD"
+                      class="payment-icon-img"
+                    />
+                    <span>Trả tiền mặt khi nhận hàng (COD)</span>
+                  </label>
+                </div>
+                <div class="payment-option">
+                  <input type="radio" id="momo" name="payment" value="momo" />
+                  <label for="momo">
+                    <img
+                      src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png"
+                      alt="Momo"
+                      class="payment-icon-img"
+                    />
+                    <span>Ví điện tử Momo</span>
+                  </label>
+                </div>
+                <div class="payment-option">
+                  <input type="radio" id="atm" name="payment" value="atm" />
+                  <label for="atm">
+                    <img
+                      src="./img/atm.png"
+                      alt="ATM"
+                      class="payment-icon-img"
+                    />
+                    <span>Thẻ ATM nội địa (Internet Banking)</span>
+                  </label>
+                </div>
+                <div class="payment-option">
+                  <input type="radio" id="visa" name="payment" value="visa" />
+                  <label for="visa">
+                    <img
+                      src="./img/visa.png"
+                      alt="Visa"
+                      class="payment-icon-img"
+                    />
+                    <span>Thanh toán quốc tế Visa, Master, JCB</span>
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-order">Đặt hàng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="grid grid-4 footer-grid">
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Về ABC Shop</h4>
+              <p>
+                Cửa hàng thời trang ABC mang đến những sản phẩm chất lượng cao
+                với phong cách hiện đại, giúp bạn tự tin thể hiện cá tính.
+              </p>
+              <div class="social-icons">
+                <a href="#"
+                  ><img
+                    src="./img/facebook-app-symbol.png"
+                    alt="Facebook"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img
+                    src="./img/instagram.png"
+                    alt="Instagram"
+                    class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="./img/youtube.png" alt="YouTube" class="icon-img"
+                /></a>
+                <a href="#"
+                  ><img src="./img/tik-tok.png" alt="TikTok" class="icon-img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Hỗ trợ</h4>
+              <ul>
+                <li><a href="#">Câu hỏi thường gặp</a></li>
+                <li><a href="#">Chính sách giao hàng</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên kết</h4>
+              <ul>
+                <li><a href="about.html">Về chúng tôi</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="footer-column">
+              <h4>Liên hệ</h4>
+              <ul>
+                <li><p>19 Lê Thánh Tông, Hoàn Kiếm, Hà Nội</p></li>
+                <li><p>(024) 39 876 543</p></li>
+                <li><p>support@abcshop.com</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 ABC Shop. Thiết kế và phát triển bởi bạn.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
